@@ -1,5 +1,5 @@
 import { ModeToggle } from "@/components/mode-toggle"
-import { ToastTypes } from "@/components/toast"
+import { ToastTypes, Toast } from "@/components/toast"
 import { Button } from "@/components/ui/button"
 
 export default function Page() {
@@ -17,7 +17,7 @@ export default function Page() {
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
       </div>
-      <ToastTypes/>
+      <Toast btnName="Testing" tType="success" />
     </div>
   )
 }

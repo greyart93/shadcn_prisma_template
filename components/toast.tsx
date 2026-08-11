@@ -60,3 +60,17 @@ export function ToastTypes() {
     </div>
   )
 }
+
+
+// outline - default
+export function Toast({btnName, tType} : {btnName: string, tType: string}) {
+  return (
+    <Button
+        variant="outline"
+        onClick={() => toast.add({ description: "Event has been created.", type: tType })}
+      >
+        {btnName}
+      </Button>
+  )
+}
+
